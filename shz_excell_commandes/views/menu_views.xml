@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <menuitem id="menu_stock_reports"
+              name="Rapports"
+              parent="stock.menu_stock_root"
+              sequence="110"/>
+
+    <menuitem id="menu_stock_orders_deliveries"
+              name="Commandes/Livraisons"
+              parent="menu_stock_reports"
+              action="action_sale_order_report_wizard"
+              sequence="10"
+              groups="sales_team.group_sale_manager"/>
+</odoo>
